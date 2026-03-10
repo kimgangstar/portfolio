@@ -1,0 +1,62 @@
+@media screen and (min-width:600px) {
+    /* 1행 글자 크기 , 여백 조절 */
+    #wrap .intro h1 span {
+        font-size: 1.5rem; 
+    }
+    #wrap .intro h1 span:last-child em {
+        font-size: 1.75rem;
+    }
+    /* ========2행============ */
+    #wrap #info .profile .photo { /* 증명사진 */
+        width: 339px; height: 413px; 
+    }
+    #wrap #project_wrap .project .title_thum .mockup {height: 427px;}
+    #wrap #project_wrap .project .title_thum .mockup img {height: auto; width: 100%;} /* 덮어쓰기 */
+    /* 4행 그래픽 이미지 확대 */
+    #wrap #project_wrap .graphic_wrap .graphic_container a {
+        width: 246px; height: 320px; margin-bottom: 30px;
+    }
+} /* 사용자가 보는 기기 너비가 600보다 크면 */
+@media screen and (min-width:840px) {
+    
+    /* 2행 info -> 1행 2열 레이아웃 구조 변경 */
+    #wrap #info {
+        display: flex; flex-flow: row nowrap;
+        justify-content: center; align-items: flex-start;
+        padding: 0 15px;
+        gap: 50px;
+    }
+    #wrap #info .profile ul {
+    position: relative;right: 50px;
+}
+    #wrap #info .profile .skill_pc {display: none;}
+    #wrap #info .profile .skill_pc h2 {text-align: left;}
+    #wrap #info .profile .skill_pc .skill_list {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        width: 531px; gap: 10px;
+}
+    #wrap #info .detail {
+        padding-top: 190px;
+    }
+    #wrap #info .detail dl:last-child {display: block;}
+    /* 3행 web -> 1행 2열 레이아웃 구조 변경 */
+    #wrap #project_wrap .project {
+        display: flex; flex-flow: row nowrap;
+        gap: 30px;
+    }
+    #wrap #project_wrap h1 {font-size: 2rem;}
+    #wrap #project_wrap .project .details {
+        display: flex; flex-flow: column nowrap;
+        justify-content: flex-start; 
+        margin-top: 30px;
+    }
+    #wrap #project_wrap .project .title_thum .mockup {height: 527px;}
+    #wrap #project_wrap .project .details .link {text-align: left;}
+    #wrap #project_wrap .project .details ul li,
+    #wrap #project_wrap .project .details ul li em,
+    #wrap #project_wrap .project .details h3,
+    #wrap #project_wrap .project .details .plan {font-size: 1.1rem;}
+    /* 4행 그래픽 이미지 확대 */
+} /* 사용자가 보는 기기 너비가 840보다 크면 */
